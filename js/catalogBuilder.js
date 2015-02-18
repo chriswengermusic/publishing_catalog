@@ -23,7 +23,7 @@ var beginningStrings = {
             catNum: "BS-003",
             image: "images/Peril.jpg",
             desc: "Peril is a driving tune in e dorian for beginning string players. Confined to a very narrow range with repetitive rhythmic and melodic motives, it is easily played for a first concert.",
-            audio: "audio/peril.mp3"
+            audio: "audio/Peril.mp3"
         },
         {
             title: "Reely D",
@@ -143,31 +143,32 @@ var developingStrings = {
 var popularStyles = {
     pieces:[
         {
-            title: "Kleiner Marsch",
-            catNum: "BS-001",
-            image: "images/Kleiner_Marsch.jpg",
-            desc: "Kleiner Marsch (German for “little march”) is geared specifically for very beginning orchestra. Two main motives are present throughout, a light, playful “A” theme introduced by the celli and the smooth and lyrical “B” theme introduced by the violins.",
-            audio: "audio/Kleiner_Marsch.mp3"
+            title: "Rock Impromptu #1",
+            catNum: "PS-001",
+            image: "images/rock.jpg",
+            desc: "Rock Impromptu #1 is a gritty emulation of popular modern rock music for bowed strings. Characterized by energetic, rhythmic accompaniments, open sonorities, sometimes strident dissonances and a haunting, gothic melody, it captures the essence of hard rock from the Billboard charts, even down to the Verse-Hook-Chorus structure. Prevalent syncopations on the sixteenth note maintain a high degree of interest and challenge.",
+            audio: "audio/Rock.mp3"
         },
         {
-            title: "Driven!",
-            catNum: "BS-002",
-            image: "images/Driven.jpg",
-            desc: "Accessible to even very beginning string players, Driven! will be an enjoyable popular-style selection in any concert program! Its simple structure and fast, energetic style are reminiscent of contemporary popular music. When played with the included drum accompaniment, students will feel like they are playing on a top 40 radio station.",
-            audio: "audio/Driven.mp3"
+            title: "'A' Blues News",
+            catNum: "PS-002",
+            image: "images/A_Blues_News.jpg",
+            desc: "'A' Blues News is a medium swing tune with sectional features all around the ensemble.",
+            audio: "audio/A_Blue_News.mp3"
         },
         {
-            title: "Peril",
-            catNum: "BS-003",
-            image: "images/Peril.jpg",
-            desc: "Peril is a driving tune in e dorian for beginning string players. Confined to a very narrow range with repetitive rhythmic and melodic motives, it is easily played for a first concert.",
-            audio: "audio/peril.mp3"
+            title: "Feel the Southwind Blow",
+            catNum: "PS-003",
+            image: "images/Southwind.jpg",
+            desc: "Feel the Southwind Blow is a creative marriage of two folk tunes: the sweet Irish waltz Southwind and the American folk song Down in the Valley, sometimes referred to as Birmingham Jail. The lilting character of both melodies is captured in this sensitive and affective arrangement.",
+            audio: "audio/Southwind.mp3"
         },
         {
-            title: "Reely D",
-            catNum: "BS-004",
-            image: "images/Reely_D.jpg",
-            desc: "Reely D is an emulation of a traditional Irish reel, or fast duple dancing song. Carefully written with only quarters and halves, it is easily playable (and enjoyable) by even very beginning players. Everyone has a chance to play the lively tune, and it’s sure to bring a little touch of Eire to your next concert!"
+            title: "Solitary Passage",
+            catNum: "PS-004",
+            image: "images/Solitary.jpg",
+            desc: "Solitary Passage is a westerner's attempt to recreate traditional Arabic music. Traditionally, maqam Hijaz, in which this piece is set, evokes the loneliness of the distant desert. Arabic music has a rich melodic tradition which includes notes which are closer together than the semitones (half-steps) in Western Music, and Solitary Passage attempts to recreate this through the use of B half-flats, a (slightly higher) e-flat and a (slightly lower) F-sharp.",
+            audio: "audio/Solitary.mp3"
         }
     ],
     display: function(){
@@ -175,15 +176,16 @@ var popularStyles = {
             var formattedTitle = PopstringsTitle.replace("%data%", popularStyles.pieces[piece].title);
             var formattedImage = PopstringsImg.replace("%data%", popularStyles.pieces[piece].image);
             var formattedNum = PopstringsNum.replace("%data%", popularStyles.pieces[piece].catNum);
-            var formattedDesc = PopgstringsDesc.replace("%data%", popularStyles.pieces[piece].desc);
-            $("#beginningStrings").append(BegstringsStart);
-            $(".Beg-entry:last").append(formattedImage);
-            $(".Beg-entry:last").append(formattedTitle + formattedNum + formattedDesc);
-            $(".Beg-entry:last").append(BegstringsEnd);
+            var formattedDesc = PopstringsDesc.replace("%data%", popularStyles.pieces[piece].desc);
+            $("#popularStyles").append(PopstringsStart);
+            $(".Pop-entry:last").append(formattedImage);
+            $(".Pop-entry:last").append(formattedTitle + formattedNum + formattedDesc);
+            $(".Pop-entry:last").append(PopstringsEnd);
         }
     }
 };
 
 beginningStrings.display();
 developingStrings.display();
+popularStyles.display();
 

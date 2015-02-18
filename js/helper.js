@@ -15,9 +15,9 @@ var DevstringsNum = '<span class="catNum">%data%</span></h4>';
 var DevstringsDesc = '<p>%data%</p></div>';
 var DevstringsEnd = '<div class="row"></div>';
 
-var PopstringsStart = '<div class="row Dev-entry"></div>';
+var PopstringsStart = '<div class="row Pop-entry"></div>';
 var PopstringsImg = '<div class="col-3"><img src="%data%" class="cover-image"></div>';
-var PopstringsTitle = '<div class="col-9"><h4 class="Dev-title">%data% -- ';
+var PopstringsTitle = '<div class="col-9"><h4 class="Pop-title">%data% -- ';
 var PopstringsNum = '<span class="catNum">%data%</span></h4>';
 var PopstringsDesc = '<p>%data%</p></div>';
 var PopstringsEnd = '<div class="row"></div>';
