@@ -1,0 +1,126 @@
+*{
+
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Palatino Linotype', serif;
+}
+@media only screen and (max-width: 700px){
+    .cover-image {
+        display: none;
+    }
+    .logo{
+        display:none;
+    }
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1{
+    width: 8.33%;
+    padding: 10px;
+}
+.col-2 {
+    width: 16.66%;
+    padding: 10px;
+}
+.col-3{
+    width: 25%;
+    padding: 10px;
+}
+.col-4{
+    width: 33.33%;
+    padding: 10px;
+}
+.col-5{
+    width: 41.66%;
+    padding: 10px;
+}
+.col-6{
+    width: 50%;
+    padding: 10px;
+}
+.col-7{
+    width: 58.33%;
+    padding: 10px;
+}
+.col-8{
+    width:66.66%;
+    padding: 10px;
+}
+.col-9{
+    width: 75%;
+    padding: 10px;
+}
+.col-10{
+    width: 83.33%;
+    padding: 10px;
+}
+.col-11{
+    width: 91.66%;
+    padding: 10px;
+}
+.col-12{
+    width: 100%;
+    padding: 10px;
+}
+#name{
+    color: #000066;
+    font-family: Trajan Pro, sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: right;
+}
+h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000066
+}
+h4{
+    font-size: 18px;
+    font-weight: 800;
+}
+.Beg-title{
+    color: #8A0000;
+}
+.Dev-title{
+    color:#000066;
+}
+.Pop-title{
+    color: #003300;
+}
+.cover-image{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    float: right;
+}
+.catNum{
+    color: #000000;
+    font-size: 11px;
+    font-style: italic;
+}
+.light-gray{
+    background-color: #EBEBEB;
+}
+.Beg-entry, .Dev-entry, .Pop-entry{
+    padding: 5px;
+}
+
